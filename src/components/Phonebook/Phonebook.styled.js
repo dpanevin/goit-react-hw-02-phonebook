@@ -1,5 +1,4 @@
 import styled from '@emotion/styled/macro';
-import { ContactForm } from './ContactForm/ContactForm';
 
 export const Section = styled.section`
   width: 900px;
@@ -45,6 +44,36 @@ export const FormInput = styled.input`
 
 export const SubmitBtn = styled.button`
   margin-top: 5px;
+  width: 150px;
+  height: 25px;
+  background-color: rgba(0, 0, 255, 0.1);
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: rgba(0, 255, 255, 0.1);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 255, 0.1);
+  }
+`;
+
+export const ContactsListItem = styled.li`
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+`;
+
+export const DeleteBtn = styled.button`
   width: 150px;
   height: 25px;
   background-color: rgba(0, 0, 255, 0.1);
